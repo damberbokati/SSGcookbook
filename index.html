@@ -1,3 +1,8 @@
+<!-- This imports the proxima nova font -->
+<link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+<style>
+    @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+</style>
 
 <!-- This section is just the internals, connecting the css & naming the website-->
 <!DOCTYPE html>
@@ -9,13 +14,15 @@
     <title>SSG Cookbook</title>
     <link rel="stylesheet" href="style.css">
 
-</head>
+    <!-- This is the link for logo icons in contact section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
+</head>
 
 <!------------------------------------------------------------------------------------------------------------------->
 
  <!-- This section contains the nav bar and the SSG logo -->
- <nav class = "navbar">
+<nav class = "navbar">
     <div class = "content">
 
          <!-- SSG Cookbook LOGO -->
@@ -67,6 +74,495 @@
             </div>
     </section>
 
+<!------------------------------------------------------------------------------------------------------------------->
+
+<br id="about">
+<br>
+<br>
+<br>
+
+    <!-- This section is the "About" part of the SSG Cookbook website -->
+    <section id="about" class = "About">
+            <div class = "content">
+                <div class = "aboutContent">
+
+                    <!-- header title of the about page "About us, the interns" -->
+                    <header><div class = "aboutTextHeader">About us, the interns</div></header>
+
+                    <!-- this unordered-list is the top half section of the about section -->
+                    <ul class = "topHalfAbout">
+
+                        <!-- This is the whole slideshow containing all the team members faces-->
+                        <li><div class = "SlideshowAbout">
+                            <div id = "slider">
+
+                                    <!-- all the pictures with the corresponding linkedins -->
+                                    <a href = "https://www.linkedin.com/in/ojaswithapa"><img src = "images/TeamPictures/Ojaswi Thapa Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/anthony-plascencia-a5b907265"><img src = "images/TeamPictures/Anthony Plascencia Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/damberbokati/"><img src = "images/TeamPictures/Damber Bokati Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/iammaxlichter/"><img src = "images/TeamPictures/Maximillian Lichter Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/katharinekarau"><img src = "images/TeamPictures/Katharine Karau Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/eric-provencio-5bb140266"><img src = "images/TeamPictures/Eric Provencio Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/alena-raza"><img src = "images/TeamPictures/Alena Raza Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/araceli-ramirez78"><img src = "images/TeamPictures/Araceli Ramirez Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/bethany-atencio-9a8207253"><img src = "images/TeamPictures/Bethany Atencio Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/bethany-merino-a2961a222/"><img src = "images/TeamPictures/Bethany Merino Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/brian-richardson-250596227"><img src = "images/TeamPictures/Brian Richardson Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/emily-piccirillo-1b0604236"><img src = "images/TeamPictures/Emily Piccirillo Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/michael-crock-106a7b225/"><img src = "images/TeamPictures/Michael Crock Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/mollyryan917/"><img src = "images/TeamPictures/Molly Ryan Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/rileyhenigan/"><img src = "images/TeamPictures/Riley Henigan Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/savana-bickelhaupt-222285249"><img src = "images/TeamPictures/Savana Bickelhaupt Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/sophiaenderle"><img src = "images/TeamPictures/Sophia Enderle Employee Profile Picture.jpg"></a>
+                                    <a href = "https://www.linkedin.com/in/zeeshan-yazdani-059b091bb/"><img src = "images/TeamPictures/Zeeshan Yazdani Employee Profile Picture.jpg"></a>
+                                    
+                            </div>
+                        </div>
+                        
+                        <!-- This script just makes it so the slideshow actually works and goes from person to person -->
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+                    
+                                var stage = document.getElementById("slider");
+                                var arr = stage.getElementsByTagName("a");
+                                for(var i=0; i < arr.length; i++) {
+                                    arr[i].addEventListener("animationend", fadeComplete, false);
+                                }       
+                            }, false);
+                        </script></li>
+
+                        <!-- This is the text section to the right of the slideshow -->
+                        <li><p class = describingTextRightAbout>Lorem, ipsum dolor sit amet consectetur 
+                            adipisicing elit. Laborum quis, suscipit fugiat ut magni odio corporis
+                            excepturi optio ex veritatis cum? Voluptatibus, amet magni impedit delectus
+                            similique sed nesciunt excepturi. Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Voluptatem placeat quod nihil ut voluptates? Quidem, 
+                            tempora error nam sapiente repudiandae libero iusto harum, deleniti provident
+                            veritatis, deserunt quasi incidunt praesentium. Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit. Eius adipisci possimus explicabo commodi. 
+                            Ullam ab quia corrupti, incidunt minus ex facere perspiciatis nemo modi 
+                            laudantium neque iste voluptatum mollitia qui?
+                        
+                            <br><br>
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis veritatis, 
+                            sequi repellendus, ex omnis nulla consectetur magni nobis accusantium est minima
+                            doloremque adipisci voluptatibus architecto tempora maiores illum corrupti eveniet.
+                        
+                            <br><br>
+
+                            sequi repellendus, ex omnis nulla consectetur magni nobis accusantium est minima
+                            doloremque adipisci voluptatibus architecto tempora maiores illum corrupti eveniet.
+
+                        </p></li>
+                    </ul>
+
+                    <!-- this unordered-list is the bottom half of the about section -->
+                    <ul class = "bottomHalfAbout">
+
+                        <!-- this is the text on the bottom half, left side of the about section -->
+                        <li><p class = describingTextLeftAbout>Lorem, ipsum dolor sit amet consectetur 
+                            adipisicing elit. Laborum quis, suscipit fugiat ut magni odio corporis
+                            excepturi optio ex veritatis cum? Voluptatibus, amet magni impedit delectus
+                            similique sed nesciunt excepturi. Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Voluptatem placeat quod nihil ut voluptates? Quidem, 
+                            tempora error nam sapiente repudiandae libero iusto harum, deleniti provident
+                            veritatis, deserunt quasi incidunt praesentium. Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit. Eius adipisci possimus explicabo commodi. 
+                            Ullam ab quia corrupti, incidunt minus ex facere perspiciatis nemo modi 
+                            laudantium neque iste voluptatum mollitia qui?
+                        
+                            <br><br>
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis veritatis, 
+                            sequi repellendus, ex omnis nulla consectetur magni nobis accusantium est minima
+                            doloremque adipisci voluptatibus architecto tempora maiores illum corrupti eveniet.
+                            sequi repellendus, ex omnis nulla consectetur magni nobis accusantium est minima
+                            doloremque adipisci voluptatibus architecto tempora maiores illum corrupti eveniet.
+
+                        </p></li>
+
+                        <!-- this is the image on the bottom half, to the right on the about section -->
+                        <li>
+                            <div class = "placeholderborder">
+                                <img class = "placeholderImage" src="images/ssglogo.png">
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+<!------------------------------------------------------------------------------------------------------------------->
+
+<br id="recipes">
+<br>
+<br>
+<br>
+
+    <section class = "recipes">
+        <div class = "content">
+            <div class = "recipesContent">
+
+                <!-- these two lines are the text right about the images of the food -->
+                <header><div class="recipesHeader">Recipes!!!</div></header>
+                <div class = "recipesText1">Just hover over the image to see what the it is!</div>
+
+                <div class = "boxesAll">
+                <!-- All of the navigation between each recipe -->
+                <nav>
+                
+                    <!--creating the list-->
+                    <ul class="recipe__links">
+                
+                        <!--Recipe's Box-->
+                        <li>
+                            <a href = "#buy"><div class="Box">
+                
+                                <!--The actual background image-->
+                                <img class="image__img" src="images/Momo.jpg" alt="Apollo">
+                
+                                <!--The blur when you hover and the text inside the blur-->
+                                <div class="image__overlay image__overlay--blur">
+                                    <div class="image__title">MoMo</div>
+                                    <p class="image__description">
+                                        <br>
+                                        Damber Bokati
+                                        <br>
+                                        A Tipical Nepalese Cuisine
+                                    </p>
+                                </div>
+                
+                            </div>
+                            </a>
+                        </li>
+                        <!--Recipe's Box-->
+                        <li>
+                            <a href = "#buy"><div class="Box">
+                
+                                <!--The actual background image-->
+                                <img class="image__img" src="images/food.jpg" alt="Apollo">
+                
+                                <!--The blur when you hover and the text inside the blur-->
+                                <div class="image__overlay image__overlay--blur">
+                                    <div class="image__title">Recipe Title</div>
+                                    <p class="image__description">
+                                        <br>
+                                        Recipe Author
+                                        <br>
+                                        brief recipe description
+                                    </p>
+                                </div>
+                
+                            </div>
+                            </a>
+                        </li>
+                        <!--Recipe's Box-->
+                        <li>
+                            <a href = "#buy"><div class="Box">
+                
+                                <!--The actual background image-->
+                                <img class="image__img" src="images/food.jpg" alt="Apollo">
+                
+                                <!--The blur when you hover and the text inside the blur-->
+                                <div class="image__overlay image__overlay--blur">
+                                    <div class="image__title">Recipe Title</div>
+                                    <p class="image__description">
+                                        <br>
+                                        Recipe Author
+                                        <br>
+                                        brief recipe description
+                                    </p>
+                                </div>
+                
+                            </div>
+                            </a>
+                        </li>
+                        <!--Recipe's Box-->
+                        <li>
+                            <a href = "#buy"><div class="Box">
+                
+                                <!--The actual background image-->
+                                <img class="image__img" src="images/food.jpg" alt="Apollo">
+                
+                                <!--The blur when you hover and the text inside the blur-->
+                                <div class="image__overlay image__overlay--blur">
+                                    <div class="image__title">Recipe Title</div>
+                                    <p class="image__description">
+                                        <br>
+                                        Recipe Author
+                                        <br>
+                                        brief recipe description
+                                    </p>
+                                </div>
+                
+                            </div>
+                            </a>
+                        </li>
+                        <!--Recipe's Box-->
+                        <li>
+                            <a href = "#buy"><div class="Box">
+                
+                                <!--The actual background image-->
+                                <img class="image__img" src="images/food.jpg" alt="Apollo">
+                
+                                <!--The blur when you hover and the text inside the blur-->
+                                <div class="image__overlay image__overlay--blur">
+                                    <div class="image__title">Recipe Title</div>
+                                    <p class="image__description">
+                                        <br>
+                                        Recipe Author
+                                        <br>
+                                        brief recipe description
+                                    </p>
+                                </div>
+                
+                            </div>
+                            </a>
+                        </li>
+                        <!--Recipe's Box-->
+                        <li>
+                            <div class="Box">
+                
+                                <!--The actual background image-->
+                                <img class="image__img" src="images/food.jpg" alt="Apollo">
+                
+                                <!--The blur when you hover and the text inside the blur-->
+                                <div class="image__overlay image__overlay--blur">
+                                    <div class="image__title">Recipe Title</div>
+                                    <p class="image__description">
+                                        <br>
+                                        Recipe Author
+                                        <br>
+                                        brief recipe description
+                                    </p>
+                                </div>
+                
+                            </div>
+                            </a>
+                        </li>
+                        <!--Recipe's Box-->
+                        <li>
+                            <a href = "#buy"><div class="Box">
+                
+                                <!--The actual background image-->
+                                <img class="image__img" src="images/food.jpg" alt="Apollo">
+                
+                                <!--The blur when you hover and the text inside the blur-->
+                                <div class="image__overlay image__overlay--blur">
+                                    <div class="image__title">Recipe Title</div>
+                                    <p class="image__description">
+                                        <br>
+                                        Recipe Author
+                                        <br>
+                                        brief recipe description
+                                    </p>
+                                </div>
+                
+                            </div>
+                            </a>
+                        </li>
+                        <!--Recipe's Box-->
+                        <li>
+                            <a href = "#buy"><div class="Box">
+                
+                                <!--The actual background image-->
+                                <img class="image__img" src="images/food.jpg" alt="Apollo">
+                
+                                <!--The blur when you hover and the text inside the blur-->
+                                <div class="image__overlay image__overlay--blur">
+                                    <div class="image__title">Recipe Title</div>
+                                    <p class="image__description">
+                                        <br>
+                                        Recipe Author
+                                        <br>
+                                        brief recipe description
+                                    </p>
+                                </div>
+                
+                            </div>
+                            </a>
+                        </li>
+                        <!--Recipe's Box-->
+                        <li>
+                            <a href = "#buy"><div class="Box">
+                
+                                <!--The actual background image-->
+                                <img class="image__img" src="images/food.jpg" alt="Apollo">
+                
+                                <!--The blur when you hover and the text inside the blur-->
+                                <div class="image__overlay image__overlay--blur">
+                                    <div class="image__title">Recipe Title</div>
+                                    <p class="image__description">
+                                        <br>
+                                        Recipe Author
+                                        <br>
+                                        brief recipe description
+                                    </p>
+                                </div>
+                
+                            </div>
+                            </a>
+                        </li>
+                
+                
+                    </ul>
+                
+                </nav>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!------------------------------------------------------------------------------------------------------------------->
+   
+    <!-- This ID just makes it so when you click "buy" on the nav bar, it travels to this section -->
+    <br id="buy">
+    <br>
+    <br>
+    <br>
+
+    <section class="Buy">
+
+        <div class="content">
+
+            <h1 class="title">Buy Now</h1>
+
+            <div class="buyContent">
+
+                <div class="contentLeft" id="contentLR">
+
+                    <img src="images/DamInst.png">
+
+                    <p>QR Sample For Payment 1</p>
+
+                </div>
+
+                <div class="contentRight" id="contentLR">
+
+                    <img src="images/DamLinke.png">
+
+                    <p>QR Sample For Payment 2</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!------------------------------------------------------------------------------------------------------------------->
+   
+<br id="contact">
+<br>
+<br>
+<br>
+   
+    <section class="contact">
+
+        <div class="content">
+
+            <h2 class="title">Contact me</h2>
+
+            <div class="contactContent">
+
+                <div class="contentLeft" id="contentLR">
+
+                    <div class="text">Get in Touch</div>
+
+                    <p>If you have any questions please reach out to us through text or email on the contact details provided below. Also, you can provide your information and send us a message and we will contact you shortly. Thank you!  </p>
+
+                    <div class="icons">
+
+                        <div class="row">
+                            <img src="images/ssglogo.png">
+                        </div>
+
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">2535-B TX-121 #110, Lewisville, Texas</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">fhoover@southwestsolutions.com</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div class="info">
+                                <div class="head">Phone</div>
+                                <div class="sub-title">+1(214)442-9789</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="contentRight" id="contentLR">
+
+                    <div class="text">Message Us</div>
+
+                    <form action="https://formspree.io/f/xpzegdnq" method="POST">
+
+                        <div class="fields">
+
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+
+                        </div>
+
+                        <div class="field">
+
+                            <input type="text" placeholder="Subject" required>
+
+                        </div>
+
+                        <div class="field textarea">
+
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+
+                        </div>
+
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!------------------------------------------------------------------------------------------------------------------->
+   
+
+
 </body>
-
-
+</html>
